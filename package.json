@@ -1,0 +1,27 @@
+{
+  "name": "news-site",
+  "version": "1.0.0",
+  "description": "This will be a news site page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rikTaa/news-site.git"
+  },
+  "author": "Tarik Fajic",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rikTaa/news-site/issues"
+  },
+  "homepage": "https://github.com/rikTaa/news-site#readme",
+  "dependencies": {
+    "bower": "^1.8.13",
+    "eslint": "^8.4.0",
+    "knockout": "^3.5.1",
+    "sass": "^1.44.0",
+    "typescript": "^4.5.2",
+    "websocket": "^1.0.34"
+  }
+}
