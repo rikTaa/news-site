@@ -1,10 +1,11 @@
-@media (min-width: 768px) {
+@media (min-width: 770px) {
   .container {
-    width: 750px;
+    width: 770px;
   }
 }
-@media (min-width: 992px) {
+@media (max-width: 970px) {
   .container {
+    margin-left: 10% !important;
     width: 970px;
   }
 }

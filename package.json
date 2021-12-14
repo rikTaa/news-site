@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "gulp sass"
+    "scss": "gulp sass",
+    "build": "webpack public/js/app.js dist/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -48,6 +49,7 @@
     "gulp-util": "^3.0.8",
     "gulp-wrapper": "^1.0.0",
     "jshint": "^2.13.1",
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.0",
+    "webpack": "^5.65.0"
   }
 }
