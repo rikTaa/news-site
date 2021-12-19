@@ -6,5 +6,5 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.listen(port, () => {
-    console.log(`Example app listening at http://localhost:${port}`)
+    console.log(`Example app listening at http://localhost:${port}/html/index.html`)
 })

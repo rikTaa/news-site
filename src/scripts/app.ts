@@ -1,12 +1,12 @@
-/* const request = require('request') */
+const request = require('request')
 const key = 'c242c34c44da42728b9854bb8aa9a08e';
-const country = 'at'
+const country = 'at';
 const url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${key}`;
 
 declare var ko: any;
 
 // Here's my data model
-class ViewModel {
+/* export class ViewModel {
     firstName: any;
     lastName: any;
     fullName: any;
@@ -22,9 +22,9 @@ class ViewModel {
     };
 }
 
-ko.applyBindings(new ViewModel("Planet", "Earth")); // This makes Knockout get to work
+ko.applyBindings(new ViewModel("Planet", "Earth")); */ // This makes Knockout get to work
 // End of data model
-/* 
+
 request({ url: url, json: true }, (error: any, response: any) => {
 
     for (let i = 0; i <= 2; i++) {
@@ -44,8 +44,8 @@ request({ url: url, json: true }, (error: any, response: any) => {
         console.log(image);
         console.log(url);
         console.log(author);
-        console.log(" ");
+        console.log("--------------------------");
     }
 })
- */
+
 /* https://newsapi.org/v2/everything?q=keyword&apiKey=c242c34c44da42728b9854bb8aa9a08e */

@@ -1,20 +1,188 @@
-@media (min-width: 770px) {
+/* ----------- Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
   .container {
-    width: 770px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .item {
+    width: 370px;
+    border: 1px solid black;
+    margin: 0.3%;
+    height: 100%;
+    margin-bottom: 15px !important;
+    -webkit-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+  }
+  .container .item .articleImg {
+    width: 100%;
+    height: 50%;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+  .container .lang {
+    display: none;
+  }
+  header {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-text {
+    font-family: 'Chomsky' !important;
+    font-size: 40px !important;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  header #date {
+    display: none;
   }
 }
 
-@media (max-width: 970px) {
+/* ----------- Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+  header {
+    border-bottom: 1px solid black;
+    margin-bottom: 0.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-text {
+    font-family: 'Chomsky' !important;
+    font-size: 40px !important;
+    text-align: center;
+    padding: 0.5rem 0rem;
+  }
+  header #date {
+    display: none;
+  }
   .container {
-    margin-left: 10% !important;
-    width: 970px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .container .item {
+    width: 370px;
+    border: 1px solid black;
+    margin: 0.3%;
+    height: 100%;
+    -webkit-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+  }
+  .container .item .articleImg {
+    width: 100%;
+    height: 50%;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+  .lang {
+    display: none;
   }
 }
 
-@media (min-width: 1200px) {
+/* ----------- Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+
+/* ----------- iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
   .container {
-    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
+  .container .item {
+    width: 600px !important;
+    border: 1px solid black;
+    margin: 0.3%;
+    height: 100%;
+    margin-bottom: 15px !important;
+    -webkit-transition: margin 0.2s ease-in-out;
+    transition: margin 0.2s ease-in-out;
+  }
+  .container .item .articleImg {
+    width: 100%;
+    height: 50%;
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+  }
+}
+
+/* ----------- iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/* ----------- iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/* ----------- Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+/* ----------- Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+
+/* ----------- iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
 }
 
 * {
@@ -30,25 +198,16 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-column-gap: 3%;
-          column-gap: 3%;
-  margin-top: 0.2%;
-  padding-right: 15px;
-  padding-left: 15px;
-  margin-right: auto;
-  margin-left: auto;
-  -ms-flex-item-align: center;
-      align-self: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .container .item {
   width: 370px;
   border: 1px solid black;
   margin: 0.3%;
+  height: 100%;
   -webkit-transition: margin 0.2s ease-in-out;
   transition: margin 0.2s ease-in-out;
 }
@@ -60,9 +219,8 @@
           filter: grayscale(1);
 }
 
-.container :hover {
-  cursor: pointer;
-  margin-top: -2px;
+.container .lang {
+  margin: 0%;
 }
 
 header {
@@ -84,41 +242,6 @@ header .header-text {
   font-size: 50px;
   text-align: center;
   padding: 0.5rem 0rem;
-}
-
-header .test {
-  margin-left: 50%;
-}
-
-header .dropdown-menu {
-  list-style: none;
-}
-
-header .dropdown-menu .language-list {
-  display: none;
-  list-style: none;
-}
-
-header .dropdown-menu .language-list li {
-  font-size: 20px;
-  width: 100px;
-}
-
-header .dropdown-menu .language-list :hover {
-  cursor: pointer;
-  color: white;
-  background-color: gray;
-}
-
-header :hover {
-  list-style: none;
-  display: block;
-  cursor: pointer;
-}
-
-header :hover .language-list {
-  display: block;
-  position: absolute;
 }
 
 header #date {
