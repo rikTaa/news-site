@@ -3,7 +3,7 @@ const options = {
     right: '10px', // default: '32px'
     left: 'unset', // default: 'unset'
     time: '0.3s', // default: '0.3s'
-    mixColor: '#fff', // default: '#fff'
+    mixColor: '#ddd', // default: '#fff'
     backgroundColor: '#fff',  // default: '#fff'
     buttonColorDark: '#121212',  // default: '#100f2c'
     buttonColorLight: '#fff', // default: '#fff'

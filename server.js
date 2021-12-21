@@ -9,7 +9,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 const key = 'c242c34c44da42728b9854bb8aa9a08e';
-const country = 'de';
+const country = 'at';
 const url = `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${key}`;
 
 // Set static folder
